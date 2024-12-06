@@ -28,7 +28,7 @@ class MyPlanCrew():
     def shopping_list_optimizer(self) -> Agent:
         return Agent(
             config=self.agents_config['shopping_list_optimizer'],
-            tools=[SerperDevTool()],
+ #           tools=[SerperDevTool()],
             verbose=True
         )
 

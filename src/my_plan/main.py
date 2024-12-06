@@ -12,9 +12,9 @@ def run():
     Run the crew.
     """
     inputs = {
-        'dietary_requirement': 'Vegetarian',
-        'ingredients': 'Spinach, Tofu, Quinoa, Bell Peppers, Mushrooms', 
-        'health_goals': 'Increase protein intake, reduce processed foods'
+        'dietary_requirement': 'Gluten-Free',
+        'ingredients': 'Chicken, Sweet Potatoes, Kale, Avocado, Blueberries', 
+        'health_goals': 'Support weight loss, improve gut health'
     }
     MyPlanCrew().crew().kickoff(inputs=inputs)
 
@@ -24,9 +24,9 @@ def train():
     Train the crew for a given number of iterations.
     """
     inputs = {
-        'dietary_requirement': 'Vegetarian',
-        'ingredients': 'Spinach, Tofu, Quinoa, Bell Peppers, Mushrooms', 
-        'health_goals': 'Increase protein intake, reduce processed foods'
+        'dietary_requirement': 'Gluten-Free',
+        'ingredients': 'Chicken, Sweet Potatoes, Kale, Avocado, Blueberries', 
+        'health_goals': 'Support weight loss, improve gut health'
     }
     try:
         MyPlanCrew().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
@@ -49,9 +49,9 @@ def test():
     Test the crew execution and returns the results.
     """
     inputs = {
-        'dietary_requirement': 'Vegetarian',
-        'ingredients': 'Spinach, Tofu, Quinoa, Bell Peppers, Mushrooms', 
-        'health_goals': 'Increase protein intake, reduce processed foods'
+        'dietary_requirement': 'Gluten-Free',
+        'ingredients': 'Chicken, Sweet Potatoes, Kale, Avocado, Blueberries', 
+        'health_goals': 'Support weight loss, improve gut health'
     }
     try:
         MyPlanCrew().crew().test(n_iterations=int(sys.argv[1]), openai_model_name=sys.argv[2], inputs=inputs)
