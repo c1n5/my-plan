@@ -1,0 +1,137 @@
+# Multi-Agent System (MAS) for Weekly Shopping List Creation
+
+### Purpose:
+The MAS aims to help users generate a weekly shopping list by providing varied meal options (breakfast, lunch, dinner) for two people. Each agent has clearly defined tasks and works collaboratively to deliver a tailored plan.
+
+---
+
+## 1. **Analyst Agent**
+### Role:
+Defines the problem by gathering and analyzing user requirements to set the foundation for the system.
+
+### Tasks:
+1. **Requirement Gathering:**
+   - Conduct a user survey or questionnaire to collect preferences, including:
+     - Dietary restrictions (e.g., vegetarian, gluten-free, allergens).
+     - Preferred cuisines (e.g., Italian, Indian, Mediterranean).
+     - Time available for meal preparation (e.g., quick meals, elaborate dishes).
+     - Ingredient preferences (e.g., organic, local produce).
+     - Budget constraints for groceries.
+
+2. **Meal Planning Analysis:**
+   - Categorize meals into breakfast, lunch, and dinner.
+   - Calculate portion sizes for two people per meal.
+   - Identify variety requirements (e.g., no repeated meals within the week).
+
+3. **Output Refinement:**
+   - Validate gathered inputs to ensure completeness.
+   - Flag potential conflicts (e.g., low budget vs. organic preferences).
+
+### Output Deliverables:
+- A detailed **User Profile** including preferences, dietary needs, budget, and meal categories.
+- A **Meal Planning Outline** indicating the number of meals needed per type (breakfast, lunch, dinner) for the week.
+
+---
+
+## 2. **Researcher Agent**
+### Role:
+Gathers detailed information, including recipes, ingredient lists, and nutritional data, based on the Analyst Agent's outline.
+
+### Tasks:
+1. **Recipe Collection:**
+   - Search databases or APIs (e.g., recipe websites) for recipes matching user preferences.
+   - Ensure a diverse selection of meals per type (breakfast, lunch, dinner).
+   - Gather preparation times for each recipe.
+
+2. **Ingredient Analysis:**
+   - Extract ingredient lists for each recipe.
+   - Match ingredients with dietary restrictions and preferences.
+   - Ensure availability of ingredients in local markets or online stores.
+
+3. **Nutritional and Budget Information:**
+   - Analyze the nutritional content of recipes (calories, protein, carbs, fats).
+   - Check cost estimates for ingredients to ensure budget alignment.
+
+4. **Optimization:**
+   - Flag common ingredients across recipes to minimize waste.
+   - Recommend alternatives for expensive or unavailable items.
+
+### Output Deliverables:
+- A **Recipe List** for the week, categorized by meal type.
+- **Ingredient Breakdown**, listing quantities and nutritional values.
+- A **Preliminary Budget** for the grocery list.
+
+---
+
+## 3. **Summary Agent**
+### Role:
+Synthesizes data from the Analyst and Researcher agents into a cohesive meal plan and shopping list.
+
+### Tasks:
+1. **Meal Plan Construction:**
+   - Allocate recipes to specific days of the week.
+   - Ensure a variety of cuisines and preparation methods across the week.
+   - Adjust recipes based on portion sizes for two people.
+
+2. **Shopping List Generation:**
+   - Compile a consolidated shopping list based on recipe requirements.
+   - Group items by category (e.g., vegetables, dairy, grains) for easier shopping.
+   - Highlight reusable ingredients across multiple meals.
+
+3. **Optimization and Validation:**
+   - Identify ingredients that can be prepared in advance (e.g., pre-chopped vegetables).
+   - Reduce redundancy in the shopping list to minimize waste and cost.
+   - Cross-check the plan with the user’s dietary restrictions and budget.
+
+### Output Deliverables:
+- A **Weekly Meal Plan** with specific meals for breakfast, lunch, and dinner.
+- A categorized **Shopping List** with quantities for each ingredient.
+- Recommendations for ingredient substitutions to enhance cost-efficiency.
+
+---
+
+## 4. **Reporting Agent**
+### Role:
+Presents the finalized outputs to the user, evaluates their feasibility, and provides actionable recommendations.
+
+### Tasks:
+1. **Presentation of Findings:**
+   - Display the meal plan and shopping list in a user-friendly format (e.g., PDF, app interface).
+   - Include visuals, such as images of recipes and charts for nutritional breakdown.
+
+2. **Feasibility Check:**
+   - Evaluate the practicality of the meal plan:
+     - Preparation time for each recipe.
+     - Ingredient availability and alignment with preferences.
+   - Ensure the shopping list meets the user’s budget constraints.
+
+3. **User Feedback and Adjustments:**
+   - Collect feedback on the proposed meal plan (e.g., preferences for specific meals or changes to ingredients).
+   - Suggest adjustments, such as alternative recipes or budget-friendly substitutes.
+
+4. **Final Recommendations:**
+   - Provide tips for meal preparation, storage, and reducing food waste.
+   - Highlight recipes or items that might need additional attention (e.g., hard-to-find ingredients).
+
+### Output Deliverables:
+- A finalized **Weekly Meal Plan Report**, including:
+  - Meal schedule with recipes.
+  - Nutritional breakdowns.
+  - Shopping list.
+- **Recommendations Document** with suggestions for meal preparation and cost optimization.
+
+---
+
+## System Workflow:
+1. **Analyst Agent** gathers user preferences and defines the problem.
+2. **Researcher Agent** collects data on recipes, ingredients, and costs.
+3. **Summary Agent** organizes the data into a structured meal plan and shopping list.
+4. **Reporting Agent** presents the results and ensures user satisfaction by refining outputs based on feedback.
+
+---
+
+## Benefits:
+- Customized meal planning based on user preferences and needs.
+- Efficient grocery shopping with reduced waste.
+- Variety and balance in meals for the week.
+- Streamlined user experience through collaboration between agents.

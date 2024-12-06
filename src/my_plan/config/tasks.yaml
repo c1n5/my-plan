@@ -1,0 +1,45 @@
+dietary_analyst_task:
+  description: >
+    Conduct a comprehensive analysis of dietary requirements for a personalized meal plan.
+    Interpret the dietary restriction of '{dietary_requirement}', 
+    analyze preferred ingredients '{ingredients}', 
+    and address specific health goals '{health_goals}'.
+    Generate a detailed nutritional profile and dietary constraint matrix.
+  expected_output: >
+    A comprehensive Dietary Preference Report including:
+    - Detailed nutritional guidelines
+    - Personalized eating profile
+    - Nutritional constraint matrix for meal planning
+  agent: dietary_analyst
+
+menu_planner_task:
+  description: >
+    Design a 7-day meal plan tailored to the dietary profile provided.
+    Create meals that:
+    - Align with '{dietary_requirement}' dietary restrictions
+    - Incorporate ingredients '{ingredients}'
+    - Support health goals '{health_goals}'
+    - Ensure nutritional balance and variety
+  expected_output: >
+    A comprehensive weekly menu plan including:
+    - 21 unique recipes (3 meals per day)
+    - Nutritional breakdown document
+    - Ingredient efficiency analysis
+    - Meal sequence recommendations
+  agent: menu_planner
+
+shopping_list_optimizer_task:
+  description: >
+    Transform the weekly menu plan into an efficient, cost-effective shopping list.
+    Optimize for '{dietary_requirement}' dietary needs,
+    maximize use of '{ingredients}',
+    and support '{health_goals}'.
+    Minimize food waste and optimize budget.
+  expected_output: >
+    A detailed shopping list package containing:
+    - Categorized ingredient list
+    - Precise quantity estimations
+    - Cost estimation report
+    - Substitution recommendations
+    - Ingredient inventory breakdown
+  agent: shopping_list_optimizer
